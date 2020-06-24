@@ -1,0 +1,32 @@
+.about__ava {
+  align-items: center;
+  width: 464px;
+  height: 464px;
+  margin: auto;
+  margin-left: 104px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 560px) and (max-width: 1440px) {
+  .about__ava {
+    width: 32vw;
+    height: 32vw;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+    margin-left: 7vw;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 560px) {
+  .about__ava {
+    width: 272px;
+    height: 272px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 32px;
+  }
+}

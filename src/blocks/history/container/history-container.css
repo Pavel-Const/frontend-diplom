@@ -1,0 +1,36 @@
+@import url(./__commit/history-container__commit.css);
+@import url(./__date/history-container__date.css);
+@import url(./__mail/history-container__mail.css);
+@import url(./__people-ava/history-container__people-ava.css);
+@import url(./__people-name/history-container__people-name.css);
+@import url(./__people/history-container__people.css);
+
+.history-container {
+  width: 400px;
+  height: 288px;
+  background: #ffffff;
+  border-radius: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+  .history-container {
+    width: 370px;
+    height: 262px;
+  }
+}
+
+@media screen and (min-width: 585px) and (max-width: 768px) {
+  .history-container {
+    width: 336px;
+    height: 242px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 585px) {
+  .history-container {
+    width: 288px;
+    height: 264px;
+  }
+}

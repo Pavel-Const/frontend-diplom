@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Сайт для поиска и аналитики новостей" />
+    <meta name="author" content="Konstantinov Pavel" />
+    <title>Frontend-Diplom</title>
+    <link
+      rel="shortcut icon"
+      href="<%=require('./images/favicon-front.png')%>"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>" />
+  </head>
+  <body>
+    <div class="search">
+      <header class="header">
+        <p class="logo">NewsAnalayser</p>
+        <div class="header__menu">
+          <a href="index.html" class="header__main header__menu_choise_on"
+            >Главная</a
+          >
+          <a href="about.html" class="header__about">О проекте</a>
+        </div>
+      </header>
+      <div class="search-field">
+        <h1 class="search-field__title">Что в мире твориться?</h1>
+        <p class="search-field__subtitle">
+          Введите в поиске любую тему и узнайте, насколько популярной она была в
+          новостях за прошедшую неделю.
+        </p>
+        <form class="search-field__form">
+          <input
+            type="search"
+            class="search-field__input"
+            placeholder="Введите тему новости"
+          />
+          <button type="submit" class="search-field__button">Искать</button>
+        </form>
+      </div>
+    </div>
+    <div class="search-result">
+      <div class="search-load search-result_is-opened">
+        <i class="search-load__circle-preloader"></i>
+        <p class="search-load__title">Идет загрузка новостей...</p>
+      </div>
+      <div class="search-not-found search-result_is-opened">
+        <img
+          class="search-not-found__image"
+          src="<%=require('./images/not-found.png')%>"
+          alt="страница не найдена"
+        />
+        <h3 class="search-not-found__title">Ничего не найдено</h3>
+        <p class="search-not-found__subtitle">
+          К сожалению по вашему запросу<br />
+          ничего не найдено.
+        </p>
+      </div>
+      <div class="search-cards">
+        <div class="search-cards-header">
+          <h2 class="search-cards-header__title">Результаты поиска</h2>
+          <a class="search-cards-header__link-analitic" href="analitic.html"
+            >Посмотреть аналитику ></a
+          >
+        </div>
+        <div class="search-cards-field">
+          <div class="search-card">
+            <img
+              class="search-card__image"
+              src="<%=require('./images/image_08.png')%>"
+              alt="картинка новости"
+            />
+            <p class="search-card__date">2 августа, 2019</p>
+            <h2 class="search-card__title">Национальное достояние – парки</h2>
+            <p class="search-card__description">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+              начала складываться система национальных парков – охраняемых
+              территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <a href="#" class="search-card__source">ЛЕНТА.РУ</a>
+          </div>
+          <div class="search-card">
+            <img
+              class="search-card__image"
+              src="<%=require('./images/image_04.png')%>"
+              alt="картинка новости"
+            />
+            <p class="search-card__date">2 августа, 2019</p>
+            <h2 class="search-card__title">
+              Лесные огоньки: история одной фотографии
+            </h2>
+            <p class="search-card__description">
+              Фотограф отвлеклась от освещения суровой политической реальности
+              Мексики, чтобы запечатлеть ускользающую красоту одного из местных
+              чудес природы.
+            </p>
+            <a href="#" class="search-card__source">Медуза</a>
+          </div>
+          <div class="search-card">
+            <img
+              class="search-card__image"
+              src="<%=require('./images/image_07.png')%>"
+              alt="картинка новости"
+            />
+            <p class="search-card__date">2 августа, 2019</p>
+            <h2 class="search-card__title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h2>
+            <p class="search-card__description">
+              Знаменитый фотограф снимает первозданные леса России, чтобы
+              рассказать о необходимости их сохранения. В этот раз он отправился
+              в Двинско-Пинежскую тайгу, где...
+            </p>
+            <a href="#" class="search-card__source">РИА</a>
+          </div>
+          <div class="search-card">
+            <img
+              class="search-card__image"
+              src="<%=require('./images/image_06.png')%>"
+              alt="картинка новости"
+            />
+            <p class="search-card__date">2 августа, 2019</p>
+            <h2 class="search-card__title">Национальное достояние – парки</h2>
+            <p class="search-card__description">
+              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+              начала складываться система национальных парков – охраняемых
+              территорий, где и сегодня каждый может приобщиться к природе.
+            </p>
+            <a href="#" class="search-card__source">дзен</a>
+          </div>
+          <div class="search-card">
+            <img
+              class="search-card__image"
+              src="<%=require('./images/image_01.png')%>"
+              alt="картинка новости"
+            />
+            <p class="search-card__date">2 августа, 2019</p>
+            <h2 class="search-card__title">
+              Лесные огоньки: история одной фотографии
+            </h2>
+            <p class="search-card__description">
+              Фотограф отвлеклась от освещения суровой политической реальности
+              Мексики, чтобы запечатлеть ускользающую красоту одного из местных
+              чудес природы.
+            </p>
+            <a href="#" class="search-card__source">афиша</a>
+          </div>
+          <div class="search-card">
+            <img
+              class="search-card__image"
+              src="<%=require('./images/image_05.png')%>"
+              alt="картинка новости"
+            />
+            <p class="search-card__date">2 августа, 2019</p>
+            <h2 class="search-card__title">
+              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+            </h2>
+            <p class="search-card__description">
+              Знаменитый фотограф снимает первозданные леса России, чтобы
+              рассказать о необходимости их сохранения. В этот раз он отправился
+              в Двинско-Пинежскую тайгу, где...
+            </p>
+            <a href="#" class="search-card__source">медиазона</a>
+          </div>
+        </div>
+        <button class="search-cards__button">Показать еще</button>
+      </div>
+    </div>
+    <div class="about">
+      <img
+        class="about__ava"
+        src="<%=require('../src/images/image-03.png')%>"
+        alt="фото автора"
+      />
+      <div class="about__autor">
+        <h1 class="about__autor-title">Об авторе</h1>
+        <p class="about__autor-subtitle">
+          Это блок с описанием автора проекта. Здесь следует указать, как вас
+          зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+        </p>
+        <p class="about__autor-subtitle">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут
+          научились, и чем можете помочь потенциальным заказчикам.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <img
+        class="footer__logo"
+        src="<%=require('../src/images/footer-logo.png')%>"
+        alt="логотип"
+      />
+      <ul class="footer__menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О проекте</a></li>
+        <li><a href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+      </ul>
+      <div class="footer__social">
+        <a href="#"
+          ><img src="<%=require('../src/images/cat.png')%>" alt="catbook"
+        /></a>
+        <a href="#"
+          ><img src="<%=require('../src/images/face.png')%>" alt="facebook"
+        /></a>
+      </div>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+  </body>
+</html>

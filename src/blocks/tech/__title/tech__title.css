@@ -1,0 +1,46 @@
+.tech__title {
+  max-width: 344px;
+  margin: 0;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  padding-top: 5.5vw;
+  margin-left: 7.2vw;
+  color: #1a1b22;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1310px) {
+  .tech__title {
+    max-width: 336px;
+    font-size: 35px;
+    line-height: 40px;
+
+  }
+}
+
+@media screen and (min-width: 685px) and (max-width: 768px) {
+  .tech__title {
+    max-width: 336px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 685px) {
+  .tech__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 32px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .tech__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 32px;
+    margin-left: 16px;
+  }
+}

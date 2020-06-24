@@ -1,0 +1,9 @@
+@import url(./__quantity-days/analitic-diagram__quantity-days.css);
+@import url(./body/analitic-diagram-body.css);
+@import url(./header/analitic-diagram-header.css);
+@import url(./__line/analitic-diagram__line.css);
+
+.analitic-diagram {
+  overflow: hidden;
+  min-height: 300px;
+}

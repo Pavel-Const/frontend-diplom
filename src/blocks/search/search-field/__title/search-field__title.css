@@ -1,0 +1,29 @@
+.search-field__title {
+  font-family: Roboto Slab;
+  width: 385px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4.4vw;
+  line-height: 4.5vw;
+  margin: 0;
+  color: #ffffff;
+}
+
+
+@media screen and (min-width: 490px) and (max-width: 768px) {
+  .search-field__title {
+    width: 385px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+}
+
+@media screen and (min-width: 320px) and (max-width: 490px) {
+  .search-field__title {
+    width: 78vw;
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+}

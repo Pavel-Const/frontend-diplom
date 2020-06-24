@@ -1,0 +1,26 @@
+.about__autor-title {
+  margin: 0;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 425px) and (max-width: 1440px) {
+  .about__autor-title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1a1b22;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 1160px) {
+  .about__autor-title {
+    margin-bottom: 16px;
+  }
+}

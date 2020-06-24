@@ -1,0 +1,15 @@
+.statistic__link-not-main {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #B6BCBF;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 540px) {
+    .statistic__link-not-main {
+      display: none;
+    }
+  }
+  

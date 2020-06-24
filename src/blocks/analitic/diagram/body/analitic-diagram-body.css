@@ -1,0 +1,26 @@
+@import url(./day/analitic-diagram-day.css);
+
+.analitic-diagram-body {
+  margin: 0;
+  margin-left: 104px;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1440px) {
+  .analitic-diagram-body {
+    margin-left: 7.2vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .analitic-diagram-body {
+    margin-left: 5vw;
+    height: 312px;
+    justify-content: space-around;
+    margin-bottom: 38px;
+  }
+}

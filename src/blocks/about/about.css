@@ -1,0 +1,18 @@
+@import url(./__ava/about__ava.css);
+@import url(./__autor/about__autor.css);
+@import url(./__autor-title/about__autor-title.css);
+@import url(./__autor-subtitle/about__autor-subtitle.css);
+
+.about {
+  display: flex;
+  max-height: 624px;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
+  .about {
+    display: block;
+    max-height: 752px;
+    align-items: center;
+  }
+}

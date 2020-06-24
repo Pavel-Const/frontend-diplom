@@ -1,0 +1,25 @@
+@import url(./__column/tech__column.css);
+@import url(./__icon/tech__icon.css);
+@import url(./__title/tech__title.css);
+
+.tech {
+  max-width: 1440px;
+  height: 334px;
+  background-color: #f5f6f7;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 685px) and (max-width: 1310px) {
+  .tech {
+    height: 380px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 685px) {
+  .tech {
+    min-height: 528px;
+    display: block;
+  }
+}

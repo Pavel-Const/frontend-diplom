@@ -1,0 +1,49 @@
+@import url(./__button/search-field__button.css);
+@import url(./__form/search-field__form.css);
+@import url(./__subtitle/search-field__subtitle.css);
+@import url(./__title/search-field__title.css);
+@import url(./__input/search-field__input.css);
+
+.search-field {
+  max-width: 608px;
+
+  margin: auto;
+  margin-left: 416px;
+  margin-right: 416px;
+  padding-top: 5.6%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .search-field {
+    margin: 0;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 768px) {
+  .search-field {
+    margin: auto;
+    margin-left: 21vw;
+    margin-right: 21vw;
+    padding-top: 5%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+  .search-field {
+    margin: auto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-top: 5%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .search-field {
+    margin: auto;
+    margin-left: 19px;
+    margin-right: 19px;
+    padding-top: 30px;
+  }
+}
