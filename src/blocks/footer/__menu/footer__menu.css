@@ -1,0 +1,34 @@
+.footer__menu {
+  padding: 0;
+}
+
+
+ul.footer__menu li {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1a1b22;
+  list-style-type: none;
+  display: inline;
+  margin-right: 2.8vw;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 675px) {
+  ul.footer__menu li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: start;
+    display: block;
+    text-decoration: none;
+  }
+  .footer__menu {
+   margin: 0;
+  }
+}

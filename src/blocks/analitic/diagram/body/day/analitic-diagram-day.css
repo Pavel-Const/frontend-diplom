@@ -1,0 +1,14 @@
+@import url(./analize-fifth-day/analitic-analize-fifth-day.css);
+@import url(./analize-first-day/analitic-analize-first-day.css);
+@import url(./analize-fourth-day/analitic-analize-fourth-day.css);
+@import url(./analize-second-day/analitic-analize-second-day.css);
+@import url(./analize-seventh-day/analitic-analize-seventh-day.css);
+@import url(./analize-sixth-day/analitic-analize-sixth-day.css);
+@import url(./analize-third-day/analitic-analize-third-day.css);
+@import url(./diagram-date-day/analitic-diagram-date-day.css);
+
+.analitic-diagram-day{
+    display: flex;
+    align-items: center;
+    height: 24px;
+}

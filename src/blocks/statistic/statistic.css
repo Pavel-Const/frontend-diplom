@@ -1,0 +1,24 @@
+@import url(./__ask/statistic__ask.css);
+@import url(./__mention/statistic__mention.css);
+@import url(./__news/statistic__news.css);
+@import url(./__link-main/statistic__link-main.css);
+@import url(./__link-not-main/statistic__link-not-main.css);
+
+.statistic {
+  max-width: 1440px;
+  margin-left: 7.2vw;
+  margin-top: 40px;
+  margin-bottom: 5.5vw;
+}
+.statistic p {
+  margin: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .statistic {
+    max-width: 1440px;
+    margin-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+}

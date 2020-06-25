@@ -1,0 +1,16 @@
+@import url(./__about/header__about.css);
+@import url(./__main/header__main.css);
+@import url(./__menu/header__menu.css);
+@import url(./logo/logo.css);
+@import url(./_color_black/header_color_black.css);
+
+
+.header {
+  max-width: 1440px;
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid rgb(143, 138, 138);
+  justify-content: space-between;
+  margin: auto;
+}

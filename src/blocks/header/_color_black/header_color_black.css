@@ -1,0 +1,40 @@
+
+.header__main.header_color_black{
+    color: #1A1B22;
+}
+
+.header__main.header_color_black::after {
+    /*position: absolute;
+    width: 68px;
+    content: "";
+    top: 41px;*/
+    border-bottom: 3px solid rgb(0, 0, 0);
+  }
+
+
+
+
+.header__about.header_color_black{
+    color: #1A1B22;
+}
+
+.header__about.header_color_black::after{
+    /*position: absolute;
+    width: 86px;
+    background-color: transparent;
+    content: "";
+    top: 61px;*/
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+
+
+
+.logo.header_color_black{
+    color: #1A1B22;
+}
+
+
+
+
+

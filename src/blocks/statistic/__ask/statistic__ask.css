@@ -1,0 +1,37 @@
+.statistic__ask {
+  display: flex;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+  margin-top: 5.5vw;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+  .statistic__ask {
+    font-size: 36px;
+    line-height: 40px;
+
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .statistic__ask {
+    font-size: 32px;
+    line-height: 34px;
+
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .statistic__ask {
+    font-size: 30px;
+
+display: block;
+  }
+}

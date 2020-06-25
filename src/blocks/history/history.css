@@ -1,0 +1,76 @@
+@import url(./container/history-container.css);
+@import url(./header/history-header.css);
+@import url(./__button/history__button.css);
+
+.history {
+  max-width: 1440px;
+  height: 606px;
+  background: #f5f6f7;
+  position: relative;
+  overflow: hidden;
+}
+
+.history:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 88px;
+  height: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(245, 246, 247, 0),
+    rgba(245, 246, 247, 1)
+  );
+  z-index: 5;
+}
+
+.history:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(245, 246, 247, 0),
+    rgba(245, 246, 247, 1)
+  );
+  z-index: 5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+  .history {
+    height: 534px;
+  }
+  .history:before {
+    display: none;
+  }
+  .history:after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 585px) and (max-width: 768px) {
+  .history {
+    height: 462px;
+  }
+  .history:before {
+    display: none;
+  }
+  .history:after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 585px) {
+  .history {
+    height: 568px;
+  }
+  .history:before {
+    display: none;
+  }
+  .history:after {
+    display: none;
+  }
+}

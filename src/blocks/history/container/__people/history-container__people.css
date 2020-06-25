@@ -1,0 +1,13 @@
+.history-container__people{
+    display: flex;
+    margin-left: 24px;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 585px) {
+    .history-container__people{
+
+        margin-left: 16px;
+
+    }
+  }

@@ -1,0 +1,28 @@
+@import url(./card/search-card.css);
+
+.search-cards-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+@media screen and (min-width: 560px) and (max-width: 760px) {
+  .search-cards-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
+  .search-cards-field {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+}

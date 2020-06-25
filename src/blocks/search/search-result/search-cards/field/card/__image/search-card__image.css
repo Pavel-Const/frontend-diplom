@@ -1,0 +1,18 @@
+.search-card__image {
+  width: 400px;
+  height: 272px;
+}
+
+@media screen and (min-width: 425px) and (max-width: 1440px) {
+  .search-card__image {
+    width: 28vw;
+    height: 19vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .search-card__image {
+    width: 100%;
+    height: 196px;
+  }
+}

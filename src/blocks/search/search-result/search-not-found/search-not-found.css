@@ -1,0 +1,14 @@
+@import url(./__image/search-not-found__image.css);
+@import url(./__subtitle/search-not-found__subtitle.css);
+@import url(./__title/search-not-found__title.css);
+
+
+.search-not-found{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    max-width: 1440px;
+    height: 374px;
+    align-items: center;
+    justify-content: center;
+}

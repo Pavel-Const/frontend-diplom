@@ -1,0 +1,13 @@
+@import url(./__circle-preloader/search-load__circle-preloader.css);
+@import url(./__title/search-load__title.css);
+
+.search-load{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    max-width: 1440px;
+    height: 282px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

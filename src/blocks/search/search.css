@@ -1,0 +1,21 @@
+@import url(./search-field/search-field.css);
+@import url(./search-result/search-result.css);
+
+.search {
+  background-image: url(../../images/georgia-ipad.png);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  .search {
+    max-width: 1440px;
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+}
