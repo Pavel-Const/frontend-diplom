@@ -44,7 +44,7 @@ FORM.addEventListener("submit", function (event) {
 
   //Поиск и отрисовка карточек
   const request = SEARCH_TEXT.value;
-  const URL = `https://praktikum.tk/news/v2/everything?language=ru&q=${request}&from=${sevenDaysAgo}&to=${today}&apiKey=${KEY}&pageSize=100`;
+  const URL = `https://newsapi.org/v2/everything?language=ru&q=${request}&from=${sevenDaysAgo}&to=${today}&apiKey=${KEY}&pageSize=100`;
 
   localStorage.setItem("title", request);
   const NEWS_API = new NewsApi(URL);
