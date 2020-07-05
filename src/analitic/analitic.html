@@ -9,7 +9,7 @@
     <title>Analitic</title>
     <link
       rel="shortcut icon"
-      href="<%=require('../../images/favicon-front.png')%>"
+      href="<%=require('../images/favicon-front.png')%>"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>" />
@@ -32,16 +32,16 @@
       <a class="statistic__link-main" href="index.html">Главная</a>
       <a class="statistic__link-not-main" href="analitic.html">/ Аналитика</a>
       <div class="statistic__ask">
-        <p>Вы спросили:</p>
-        <p>&nbsp;«Путешествия»</p>
+        <p>Вы спросили:&nbsp;</p>
+        <p class="statistic__ask-title"></p>
       </div>
       <div class="statistic__news">
-        <p>Новостей за неделю:</p>
-        <p><strong>&nbsp;34324</strong></p>
+        <p>Новостей за неделю:&nbsp;</p>
+        <strong><p class="statistic__news-week"></p></strong>
       </div>
       <div class="statistic__mention">
-        <p>Упоминаний в заголовках:</p>
-        <p><strong>&nbsp;235</strong></p>
+        <p>Упоминаний в заголовках:&nbsp;</p>
+        <strong><p class="statistic__mention-week"></p></strong>
       </div>
     </div>
     <div class="analitic">
@@ -62,32 +62,32 @@
 
         <div class="analitic-diagram-body">
           <div class="analitic-diagram-day">
-            <p class="analitic-diagram-date-day">19, пн</p>
-            <div class="analitic-analize-first-day">&nbsp;15</div>
+            <p class="analitic-diagram-date-day first-day"></p>
+            <div class="analitic-analize-first-day"></div>
           </div>
           <div class="analitic-diagram-day">
-            <p class="analitic-diagram-date-day">20, вт</p>
-            <div class="analitic-analize-second-day">&nbsp;18</div>
+            <p class="analitic-diagram-date-day second-day"></p>
+            <div class="analitic-analize-second-day"></div>
           </div>
           <div class="analitic-diagram-day">
-            <p class="analitic-diagram-date-day">21, ср</p>
-            <div class="analitic-analize-third-day">&nbsp;11</div>
+            <p class="analitic-diagram-date-day third-day"></p>
+            <div class="analitic-analize-third-day"></div>
           </div>
           <div class="analitic-diagram-day">
-            <p class="analitic-diagram-date-day">22, чт</p>
-            <div class="analitic-analize-fourth-day">&nbsp;39</div>
+            <p class="analitic-diagram-date-day fourth-day"></p>
+            <div class="analitic-analize-fourth-day"></div>
           </div>
           <div class="analitic-diagram-day">
-            <p class="analitic-diagram-date-day">23, пт</p>
-            <div class="analitic-analize-fifth-day">&nbsp;45</div>
+            <p class="analitic-diagram-date-day fifth-day"></p>
+            <div class="analitic-analize-fifth-day"></div>
           </div>
           <div class="analitic-diagram-day">
-            <p class="analitic-diagram-date-day">24, сб</p>
-            <div class="analitic-analize-sixth-day">&nbsp;73</div>
+            <p class="analitic-diagram-date-day sixth-day"></p>
+            <div class="analitic-analize-sixth-day"></div>
           </div>
           <div class="analitic-diagram-day">
-            <p class="analitic-diagram-date-day">25, вс</p>
-            <div class="analitic-analize-seventh-day">&nbsp;34</div>
+            <p class="analitic-diagram-date-day seventh-day"></p>
+            <div class="analitic-analize-seventh-day"></div>
           </div>
         </div>
 
@@ -103,7 +103,7 @@
     <div class="footer">
       <img
         class="footer__logo"
-        src="<%=require('../../images/footer-logo.png')%>"
+        src="<%=require('../images/footer-logo.png')%>"
         alt=""
       />
       <ul class="footer__menu">
@@ -113,10 +113,10 @@
       </ul>
       <div class="footer__social">
         <a href="#"
-          ><img src="<%=require('../../images/cat.png')%>" alt="catbook"
+          ><img src="<%=require('../images/cat.png')%>" alt="catbook"
         /></a>
         <a href="#"
-          ><img src="<%=require('../../images/face.png')%>" alt="facebook"
+          ><img src="<%=require('../images/face.png')%>" alt="facebook"
         /></a>
       </div>
     </div>

@@ -26,14 +26,15 @@
         </div>
       </header>
       <div class="search-field">
-        <h1 class="search-field__title">Что в мире твориться?</h1>
+        <h1 class="search-field__title">Что в мире творится?</h1>
         <p class="search-field__subtitle">
           Введите в поиске любую тему и узнайте, насколько популярной она была в
           новостях за прошедшую неделю.
         </p>
-        <form class="search-field__form">
+        <form class="search-field__form" name="search">
           <input
             type="search"
+            name="search_text"
             class="search-field__input"
             placeholder="Введите тему новости"
           />
@@ -41,12 +42,12 @@
         </form>
       </div>
     </div>
-    <div class="search-result">
-      <div class="search-load search-result_is-opened">
+    <div class="search-result" >
+      <div class="search-load search-result_is-closed">
         <i class="search-load__circle-preloader"></i>
         <p class="search-load__title">Идет загрузка новостей...</p>
       </div>
-      <div class="search-not-found search-result_is-opened">
+      <div class="search-not-found search-result_is-closed">
         <img
           class="search-not-found__image"
           src="<%=require('./images/not-found.png')%>"
@@ -58,114 +59,16 @@
           ничего не найдено.
         </p>
       </div>
-      <div class="search-cards">
+      <div class="search-cards search-result_is-closed">
         <div class="search-cards-header">
           <h2 class="search-cards-header__title">Результаты поиска</h2>
           <a class="search-cards-header__link-analitic" href="analitic.html"
             >Посмотреть аналитику ></a
           >
         </div>
-        <div class="search-cards-field">
-          <div class="search-card">
-            <img
-              class="search-card__image"
-              src="<%=require('./images/image_08.png')%>"
-              alt="картинка новости"
-            />
-            <p class="search-card__date">2 августа, 2019</p>
-            <h2 class="search-card__title">Национальное достояние – парки</h2>
-            <p class="search-card__description">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <a href="#" class="search-card__source">ЛЕНТА.РУ</a>
-          </div>
-          <div class="search-card">
-            <img
-              class="search-card__image"
-              src="<%=require('./images/image_04.png')%>"
-              alt="картинка новости"
-            />
-            <p class="search-card__date">2 августа, 2019</p>
-            <h2 class="search-card__title">
-              Лесные огоньки: история одной фотографии
-            </h2>
-            <p class="search-card__description">
-              Фотограф отвлеклась от освещения суровой политической реальности
-              Мексики, чтобы запечатлеть ускользающую красоту одного из местных
-              чудес природы.
-            </p>
-            <a href="#" class="search-card__source">Медуза</a>
-          </div>
-          <div class="search-card">
-            <img
-              class="search-card__image"
-              src="<%=require('./images/image_07.png')%>"
-              alt="картинка новости"
-            />
-            <p class="search-card__date">2 августа, 2019</p>
-            <h2 class="search-card__title">
-              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-            </h2>
-            <p class="search-card__description">
-              Знаменитый фотограф снимает первозданные леса России, чтобы
-              рассказать о необходимости их сохранения. В этот раз он отправился
-              в Двинско-Пинежскую тайгу, где...
-            </p>
-            <a href="#" class="search-card__source">РИА</a>
-          </div>
-          <div class="search-card">
-            <img
-              class="search-card__image"
-              src="<%=require('./images/image_06.png')%>"
-              alt="картинка новости"
-            />
-            <p class="search-card__date">2 августа, 2019</p>
-            <h2 class="search-card__title">Национальное достояние – парки</h2>
-            <p class="search-card__description">
-              В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
-              начала складываться система национальных парков – охраняемых
-              территорий, где и сегодня каждый может приобщиться к природе.
-            </p>
-            <a href="#" class="search-card__source">дзен</a>
-          </div>
-          <div class="search-card">
-            <img
-              class="search-card__image"
-              src="<%=require('./images/image_01.png')%>"
-              alt="картинка новости"
-            />
-            <p class="search-card__date">2 августа, 2019</p>
-            <h2 class="search-card__title">
-              Лесные огоньки: история одной фотографии
-            </h2>
-            <p class="search-card__description">
-              Фотограф отвлеклась от освещения суровой политической реальности
-              Мексики, чтобы запечатлеть ускользающую красоту одного из местных
-              чудес природы.
-            </p>
-            <a href="#" class="search-card__source">афиша</a>
-          </div>
-          <div class="search-card">
-            <img
-              class="search-card__image"
-              src="<%=require('./images/image_05.png')%>"
-              alt="картинка новости"
-            />
-            <p class="search-card__date">2 августа, 2019</p>
-            <h2 class="search-card__title">
-              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-            </h2>
-            <p class="search-card__description">
-              Знаменитый фотограф снимает первозданные леса России, чтобы
-              рассказать о необходимости их сохранения. В этот раз он отправился
-              в Двинско-Пинежскую тайгу, где...
-            </p>
-            <a href="#" class="search-card__source">медиазона</a>
-          </div>
-        </div>
-        <button class="search-cards__button">Показать еще</button>
+        <div class="search-cards-field"></div>
+        
+        <button class="search-cards__button search-result_is-closed">Показать еще</button>
       </div>
     </div>
     <div class="about">

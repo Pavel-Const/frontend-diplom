@@ -1,11 +1,10 @@
 @import url(./search-load/search-load.css);
 @import url(./search-not-found/search-not-found.css);
 @import url(./search-cards/search-cards.css);
-@import url(./_is-opened/search-result_is-opened.css);
+@import url(./_is-closed/search-result_is-closed.css);
 
 
 .search-result{
-   min-height: 282px;
     background-color: #F5F6F7;
 
 }

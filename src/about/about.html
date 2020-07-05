@@ -9,7 +9,7 @@
     <title>About</title>
     <link
       rel="shortcut icon"
-      href="<%=require('../../images/favicon-front.png')%>"
+      href="<%=require('../images/favicon-front.png')%>"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>" />
@@ -58,22 +58,22 @@
       <div class="tech__column">
         <img
           class="tech__icon"
-          src="<%=require('../../images/html.png')%>"
+          src="<%=require('../images/html.png')%>"
           alt="html-logo"
         />
         <img
           class="tech__icon"
-          src="<%=require('../../images/css.png')%>"
+          src="<%=require('../images/css.png')%>"
           alt="css-logo"
         />
         <img
           class="tech__icon"
-          src="<%=require('../../images/js.png')%>"
+          src="<%=require('../images/js.png')%>"
           alt="js-logo"
         />
         <img
           class="tech__icon"
-          src="<%=require('../../images/webpack.png')%>"
+          src="<%=require('../images/webpack.png')%>"
           alt="webpack-logo"
         />
       </div>
@@ -81,7 +81,7 @@
     <div class="about">
       <img
         class="about__ava"
-        src="<%=require('../../images/image-03.png')%>"
+        src="<%=require('../images/image-03.png')%>"
         alt="фото автора"
       />
       <div class="about__autor">
@@ -99,96 +99,21 @@
     <div class="history">
       <div class="history-header">
         <h2 class="history-header__title">История коммитов из GitHub</h2>
-        <a class="history-header__link" href="#">Открыть в Github ></a>
+        <a class="history-header__link" href="https://github.com/Pavel-Const/frontend-diplom/commits/master" target="_blank">Открыть в Github ></a>
       </div>
       <div class="swiper-container">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#"
-              ><div class="history-container">
-                <p class="history-container__date">14 августа, 2019</p>
-                <div class="history-container__people">
-                  <img
-                    class="history-container__people-ava"
-                    src="<%=require('../../images/image-01.png')%>"
-                    alt="фото автора коммита"
-                  />
-                  <div>
-                    <p class="history-container__people-name">Антон Долинин</p>
-                    <p class="history-container__people-mail">
-                      anton@yandex.ru
-                    </p>
-                  </div>
-                </div>
-                <p class="history-container__commit">
-                  Emmet (formerly Zen Coding) is a web- developer’s toolkit that
-                  can greatly improve your HTML & CSS workflow.
-                </p>
-              </div></a
-            >
-          </div>
-          <div class="swiper-slide">
-            <a href="#"
-              ><div class="history-container">
-                <p class="history-container__date">14 августа, 2019</p>
-                <div class="history-container__people">
-                  <img
-                    class="history-container__people-ava"
-                    src="<%=require('../../images/image-04.png')%>"
-                    alt="фото автора коммита"
-                  />
-                  <div>
-                    <p class="history-container__people-name">Инга Иванова</p>
-                    <p class="history-container__people-mail">
-                      ingaiva@yandex.ru
-                    </p>
-                  </div>
-                </div>
-                <p class="history-container__commit">
-                  You can install this plugin directly from NetBeans Plugin
-                  Portal: in NetBeans, open Tools > Plugins > Available plugins
-                  and find and install Emmet plugin.
-                </p>
-              </div></a
-            >
-          </div>
-          <div class="swiper-slide">
-            <a href="#"
-              ><div class="history-container">
-                <p class="history-container__date">14 августа, 2019</p>
-                <div class="history-container__people">
-                  <img
-                    class="history-container__people-ava"
-                    src="<%=require('../../images/image-033.png')%>"
-                    alt="фото автора коммита"
-                  />
-                  <div>
-                    <p class="history-container__people-name">Мария Фёдорова</p>
-                    <p class="history-container__people-mail">
-                      mariiifed@yandex.ru
-                    </p>
-                  </div>
-                </div>
-                <p class="history-container__commit">
-                  With Emmet, you can type CSS-like expressions that can be
-                  dynamically parsed, and produce output depending on what you
-                  type in the abb...
-                </p>
-              </div></a
-            >
-          </div>
         </div>
-        <!-- If we need pagination -->
+
       </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
       <div class="swiper-pagination"></div>
-      <button class="history__button">Открыть в GitHub</button>
+      <button class="history__button" onclick="window.open('https://github.com/Pavel-Const/frontend-diplom/commits/master')">Открыть в GitHub</button>
     </div>
     <div class="footer">
       <img class="footer__logo"
-      src='<%=require('../../images/footer-logo.png')%>' alt="логотип" />
+      src='<%=require('../images/footer-logo.png')%>' alt="логотип" />
       <ul class="footer__menu">
         <li><a href="index.html">Главная</a></li>
         <li><a href="about.html">О проекте</a></li>
@@ -196,14 +121,13 @@
       </ul>
       <div class="footer__social">
         <a href="#"
-          ><img src="<%=require('../../images/cat.png')%>" alt="catbook"
+          ><img src="<%=require('../images/cat.png')%>" alt="catbook"
         /></a>
         <a href="#"
-          ><img src="<%=require('../../images/face.png')%>" alt="facebook"
+          ><img src="<%=require('../images/face.png')%>" alt="facebook"
         /></a>
       </div>
     </div>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="<%= htmlWebpackPlugin.files.js %>"></script>
   </body>
 </html>
