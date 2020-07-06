@@ -4,8 +4,7 @@ export class RemoveCard {
   }
   remove() {
     while (this.container.firstChild) {
-        this.container.removeChild(this.container.firstChild);
+      this.container.removeChild(this.container.firstChild);
     }
   }
 }
-

@@ -1,10 +1,11 @@
 import "../css/about.css";
-import * as smth from "../scripts/jsSwiper";
+import Swiper from "swiper";
 import { GithubApi } from "../js/modules/GithubApi";
 import { CommitCard } from "../js/components/CommitCard";
-import { CommitCardlist } from "../js/components/CommitCardList";
-import { COMMIT_CONTAINER } from "../js/constants/Constants";
+import { CommitCardList } from "../js/components/CommitCardList";
 import { Utils } from "../js/utils/Utils";
+
+const commitContainer = document.querySelector(".swiper-wrapper");
 //---------------------Слайдер----------------------------
 const swiper = new Swiper(".swiper-container", {
   slidesPerView: 5,
@@ -12,7 +13,7 @@ const swiper = new Swiper(".swiper-container", {
   spaceBetween: 16,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true
+    clickable: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -37,8 +38,7 @@ hubApi.getCommit().then((result) => {
 
       return commitCard.createCommitCard();
     });
-    console.log(initial);
-    const cardlist = new CommitCardlist(COMMIT_CONTAINER, initial);
+    const cardlist = new CommitCardList(commitContainer, initial);
     cardlist.renderCommit(initial);
   }
   swiper.update();

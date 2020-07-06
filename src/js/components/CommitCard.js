@@ -8,7 +8,8 @@ export class CommitCard {
 
     //Обрезание комита
     this.slicedMessage = this.message.slice(0, 130);
-    if (this.slicedMessage.length < this.message.length) this.slicedMessage += "...";
+    if (this.slicedMessage.length < this.message.length)
+      this.slicedMessage += "...";
   }
   createCommitCard() {
     const card = document.createElement("div");

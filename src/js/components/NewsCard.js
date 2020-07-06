@@ -11,7 +11,6 @@ export class NewsCard {
     this.slicedTitle = this.title.slice(0, 46);
     if (this.slicedTitle.length < this.title.length) this.slicedTitle += "...";
   }
- 
 
   create() {
     const card = document.createElement("div");
@@ -26,7 +25,6 @@ export class NewsCard {
     <p class="search-card__description"></p>
     <p class="search-card__source"></p>`;
 
-  
     card.setAttribute("onclick", `window.open('${this.url}')`);
     card.setAttribute("Style", `cursor: pointer;`);
 
@@ -44,7 +42,7 @@ export class NewsCard {
 
     const cardSource = card.querySelector(".search-card__source");
     cardSource.textContent = this.source;
-    
+
     return card;
   }
 }

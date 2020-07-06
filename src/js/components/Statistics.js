@@ -14,7 +14,7 @@ export class Statistics {
         delete item.description;
       } else if (item.description.includes(this.title)) return true;
     });
-    let sum = this.searchInTitle.length + this.searchInDescription.length;
+    const sum = this.searchInTitle.length + this.searchInDescription.length;
     mention.textContent = sum;
   }
   //--------------------------Вывод Заголовок и кол-во за неделю поиска-------------------
@@ -23,12 +23,12 @@ export class Statistics {
     title.textContent = "«" + this.title + "»";
   }
   quantity(n) {
-    let quantityNews = this.data.articles.filter((item) => {
+    const quantityNews = this.data.articles.filter((item) => {
       if (item.publishedAt.includes(n)) return true;
     });
     return quantityNews.length;
   }
-  daysAnalayze(constant, number){
+  daysAnalayze(constant, number) {
     constant.textContent = number;
     constant.style.width = `calc(${number}vw * 0.7)`;
   }

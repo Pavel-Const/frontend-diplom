@@ -1,8 +1,6 @@
 export class Utils {
   constructor() {
     this.date = new Date();
-    this.dateFromLocal = JSON.parse(localStorage.getItem("Data"));
-
   }
   dataDaysAgo(n) {
     const days = n;
@@ -23,13 +21,14 @@ export class Utils {
     return daysAgo;
   }
   getWeekDay(date) {
-    let days = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
+    const days = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
     return this.day + "," + " " + days[date.getDay()];
   }
   getMonthForStatistic() {
+    this.dateFromLocal = JSON.parse(localStorage.getItem("Data"));
     this.dateMonth = this.dateFromLocal.articles.map(function (item) {
       return item.publishedAt;
-    }); 
+    });
     this.newDate = this.dateMonth[0].slice(5, 7);
     if (this.newDate == 2) this.newDate = "февраль";
     if (this.newDate == 1) this.newDate = "январь";
@@ -60,8 +59,8 @@ export class Utils {
     if (this.newDate[1] == 10) this.newDate[1] = "октября";
     if (this.newDate[1] == 11) this.newDate[1] = "ноября";
     if (this.newDate[1] == 12) this.newDate[1] = "декабря";
-    return this.newDateNew = [
+    return (this.newDateNew = [
       this.newDate[2] + " " + this.newDate[1] + "," + " " + this.newDate[0],
-    ];
+    ]);
   }
 }
