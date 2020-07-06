@@ -43,18 +43,3 @@ hubApi.getCommit().then((result) => {
   }
   swiper.update();
 });
-//-------------открытие комитов на кнопку---------------------
-/*MORE_BUTTON.addEventListener("click", function (event) {
-  b = b + 3;
-  event.preventDefault();
-  cardlist = new NewsCardlist(NEWS_CONTAINER, initial);
-  cardlist.renderPlus(initial, b);
-  console.log(b);
-  console.log(initial.length);
-  if (b + 5 >= initial.length) {
-    MORE_BUTTON.classList.add("search-result_is-closed");
-  }
-});
-
-
-*/

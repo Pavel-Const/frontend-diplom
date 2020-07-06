@@ -2,9 +2,7 @@ export class Utils {
   constructor() {
     this.date = new Date();
     this.dateFromLocal = JSON.parse(localStorage.getItem("Data"));
-    this.dateMonth = this.dateFromLocal.articles.map(function (item) {
-      return item.publishedAt;
-    }); 
+
   }
   dataDaysAgo(n) {
     const days = n;
@@ -29,8 +27,10 @@ export class Utils {
     return this.day + "," + " " + days[date.getDay()];
   }
   getMonthForStatistic() {
+    this.dateMonth = this.dateFromLocal.articles.map(function (item) {
+      return item.publishedAt;
+    }); 
     this.newDate = this.dateMonth[0].slice(5, 7);
-    //this.newDateLast = this.date[this.date.length - 1].slice(5, 7);
     if (this.newDate == 2) this.newDate = "февраль";
     if (this.newDate == 1) this.newDate = "январь";
     if (this.newDate == 3) this.newDate = "март";

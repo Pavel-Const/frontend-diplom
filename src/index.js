@@ -20,8 +20,7 @@ import { Utils } from "./js/utils/Utils";
 let cardlist = "";
 let initial = "";
 let quantity = "";
-
-//Дата 
+//Дата для url
 const utils = new Utils();
 const today = utils.dataDaysAgo(0);
 const sevenDaysAgo = utils.dataDaysAgo(6);
@@ -51,8 +50,6 @@ FORM.addEventListener("submit", function (event) {
   NEWS_API.getNews().then((result) => {
     localStorage.setItem("Data", JSON.stringify(result));
     if (result !== undefined) {
-      //const date = utils.getDateFull();
-      //console.log(date)
       initial = result.articles.map(function (articles) {
         const newsCard = new NewsCard(
           articles.source.name,
@@ -73,63 +70,6 @@ FORM.addEventListener("submit", function (event) {
   quantity = 0;
   return quantity;
 });
-
-
-
-
-
-/*function callBack(event) {
-  event.preventDefault();
-
-  //Валидация формы
-  const SEARCHINPUT = new SearchInput(FORM);
-  SEARCHINPUT.checkInputValidity(SEARCH_TEXT);
-
-  //Прелоадер
-  loader();
-
-  //Удаление карточек
-  const removeCard = new RemoveCard(SEARCH_CONTAINER_CARDS);
-  removeCard.remove();
-
-  //Поиск и отрисовка карточек
-  const request = SEARCH_TEXT.value;
-  const URL = `https://newsapi.org/v2/everything?language=ru&q=${request}&from=${sevenDaysAgo}&to=${today}&apiKey=${KEY}&pageSize=100`;
-
-  localStorage.setItem("title", request);
-  const NEWS_API = new NewsApi(URL);
-  NEWS_API.getNews().then((result) => {
-    localStorage.setItem("Data", JSON.stringify(result));
-    if (result !== undefined) {
-      initial = result.articles.map(function (articles) {
-        const newsCard = new NewsCard(
-          articles.source.name,
-          articles.title,
-          articles.publishedAt,
-          articles.description,
-          articles.urlToImage,
-          articles.url
-        );
-        return newsCard.create();
-      });
-      if (initial.length == 0) not_found();
-      cardlist = new NewsCardlist(NEWS_CONTAINER, initial);
-      cardlist.render(initial);
-      result_cards();
-    } else not_found();
-  });
-  quantity = 0;
-  return quantity;
-};
-
-*/
-
-
-
-
-
-
-
 //Вывод прелоадера
 function loader() {
   SEARCH_LOAD.classList.remove("search-result_is-closed");
