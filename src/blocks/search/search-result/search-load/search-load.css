@@ -3,7 +3,6 @@
 
 .search-load{
     display: flex;
-    display: none;
     flex-direction: column;
     max-width: 1440px;
     height: 282px;

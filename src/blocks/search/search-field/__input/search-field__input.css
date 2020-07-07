@@ -1,3 +1,6 @@
+@import url(./_valid_off/search-field__input_valid_off.css);
+
+
 .search-field__input {
   border: none;
   outline: none;
@@ -13,7 +16,7 @@
   line-height: 22px;
   color: #1a1b22;
 }
-input::-webkit-input-placeholder {
+.search-field__input::-webkit-input-placeholder {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -28,6 +31,5 @@ input::-webkit-input-placeholder {
     height: 56px;
     margin-bottom: 16px;
     margin-top: 64px;
-
   }
 }

@@ -12,9 +12,9 @@ const isDev = process.env.NODE_ENV === "development";
 
 module.exports = {
   entry: {
-    index: `${PATHS.src}/js/index`,
-    analitic: `${PATHS.src}/js/analitic`,
-    about: `${PATHS.src}/js/about`,
+    index: `${PATHS.src}/index`,
+    analitic: `${PATHS.src}/analitic/index`,
+    about: `${PATHS.src}/about/index`,
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -86,17 +86,23 @@ module.exports = {
       NODE_ENV: JSON.stringify(process.env.NODE_ENV),
     }),
     new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
       template: "./src/main.html",
       filename: "index.html",
       chunks: ["index"],
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/about/about.html",
+      inject: false,
+      hash: true,
+      template: "./src/about/about.html",
       filename: "about.html",
       chunks: ["about"],
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/analitic/analitic.html",
+      inject: false,
+      hash: true,
+      template: "./src/analitic/analitic.html",
       filename: "analitic.html",
       chunks: ["analitic"],
     }),
