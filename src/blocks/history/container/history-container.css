@@ -21,14 +21,14 @@
   }
 }
 
-@media screen and (min-width: 585px) and (max-width: 768px) {
+@media screen and (min-width: 400px) and (max-width: 768px) {
   .history-container {
     width: 336px;
     height: 242px;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 585px) {
+@media screen and (min-width: 320px) and (max-width: 400px) {
   .history-container {
     width: 288px;
     height: 264px;

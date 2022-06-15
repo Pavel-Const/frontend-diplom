@@ -63,9 +63,22 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 585px) {
+
+@media screen and (min-width: 425px) and (max-width: 585px) {
   .history {
-    height: 568px;
+    max-height: 495px;
+  }
+  .history:before {
+    display: none;
+  }
+  .history:after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .history {
+    max-height: 568px;
   }
   .history:before {
     display: none;
